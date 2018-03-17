@@ -1,0 +1,28 @@
+.progressBar {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+
+}
+
+.progressBar-info {
+    background-color: rgba(100, 100, 200, .8);
+    border-bottom-color: rgba(50, 50, 200, .8);
+}
+
+.progressBar-success {
+    background-color: rgba(100, 200, 100, .8);
+    border-bottom-color: rgba(50, 200, 50, .8);
+}
+
+.progressBar-warning {
+    background-color: rgba(155, 80, 20, .8);
+    border-bottom-color: rgba(200, 80, 20, .8);
+}
+
+.progressBar-danger {
+    background-color: rgba(200, 100, 100, .8);
+    border-bottom-color: rgba(200, 50, 50, .8);
+}

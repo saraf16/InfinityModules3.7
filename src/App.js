@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import Modal from "./components/Modal/Modal";
 import NameCard from  "./components/NameCard/NameCard";
+import ProgressBar from "./components/ProgressBar/ProgressBar";
 
 class App extends React.Component {
   constructor(props) {
@@ -28,6 +29,11 @@ class App extends React.Component {
           telephone="354-777-7777"
           imageUrl="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-256.png"
         />
+        <ProgressBar 
+          progress={50}
+          striped={true}
+          animated={true}
+          state="success" />
       </div>
     );
   }
