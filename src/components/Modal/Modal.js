@@ -6,30 +6,30 @@ const Modal = ({isOpen, onClosed, children} ) => {
     console.log(styles);
 
     const open = isOpen ? (
-        <div className={`${styles.btn}`}  >
+        <div className={`${styles.modalContent} ${styles.display}`}>
             {children}
         </div>
     ): (
-        <div className={`${styles.btn} ${styles.hidden} `}>
-        {children}
-    </div>
-    )
-    return (
+        <div className={`${styles.modalContent} ${styles.hidden} `}>
+            {children}
+        </div>
+        )
+        return (
 
-        <div isOpen={isOpen} onClick={onClosed}>{open}</div>
-    )
+            <div isOpen={isOpen} onClick={onClosed}>{open}</div>
+        )
 }
 
 Modal.Title = ({children}) => {
-    return <div>{children}</div>
+    return <div className={`${styles.modalHeader}`}>{children}</div>
 }
 
 Modal.Body = ({children}) => {
-    return <div>{children}</div>
+    return <div className={`${styles.modalBody}`}>{children}</div>
 }
 
 Modal.Footer = ({children}) => {
-    return <div>{children}</div>
+    return <div className={`${styles.modalFooter}`}>{children}</div>
 }
 
 Modal.propTypes = {
