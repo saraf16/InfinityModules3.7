@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './progressBar.css';
-import { prototype } from 'stream';
 
 const ProgressBar = ({progress, striped, animated, state} ) => {
     return (
-        <div>ProgressBar</div>
+        <div className={`${styles.progressBar} ${styles[`progressBar-${state}`]}`} >88</div>
     )
 }
 
