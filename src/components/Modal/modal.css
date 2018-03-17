@@ -1,0 +1,16 @@
+.btn {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    background-color: aqua;
+}
+
+.teststyle {
+    background-color: red;
+}
+
+.hidden {
+    visibility: hidden;
+}

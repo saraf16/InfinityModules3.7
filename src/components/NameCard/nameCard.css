@@ -1,0 +1,17 @@
+.card {
+    background-color: blanchedalmond;    padding: 10px;
+    margin: 10px;
+    width: 100%;
+
+}
+
+.avatar {
+    display: inline-block;
+    margin: 10px;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+    transition: transform 1s ease-in;
+    width: 200px;
+    height: 200px;
+}
