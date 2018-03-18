@@ -10,7 +10,6 @@
 }
 
 .carousel-medium {
-    box-sizing: border-box;
     width: 500px;
     height: 400px;
 }
@@ -20,34 +19,21 @@
     height: 700px;
 }
 
-.prev {
-    cursor: pointer;
+.arrow {
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    cursor: pointer;
     color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    margin-top: -22px;
+
 }
 
-.next {
-    box-sizing: border-box;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.right {
+    right: 10px;
+}
+
+.left {
+    left: 10px;
+ 
 }
   
