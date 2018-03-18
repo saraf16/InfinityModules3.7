@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './col.css';
 
 const Col = ({size} ) => {
     return (
-        <div className={`${styles[`col-${size}`]}`} ><p>col-1</p></div> 
+        <div className={`${styles[`col-${size}`]}`} ><p>content</p></div> 
     )
 }
 

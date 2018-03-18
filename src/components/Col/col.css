@@ -3,9 +3,6 @@
     float: left; 
     min-height: 1px; 
     width: 8.33%; 
-    /*-- our gutter -- */
-    padding: 12px; 
-    background-color: #FFDCDC;
 }
 .col-1{ width: 8.33%; }
 .col-2{ width: 16.66%; }
@@ -21,14 +18,15 @@
 .col-12{ width: 100%; }
 
 .outline, .outline *{
-    outline: 1px solid #F6A1A1; 
+    outline: 1px solid #FFC0CB; 
 }
 
 /*-- some extra column content styling --*/
 [class*='col-'] > p {
- background-color: #FFC2C2; 
- padding: 0;
+ background-color: #FFC0CB; 
  margin: 0;
  text-align: center; 
  color: white; 
+ padding: 6px;
+
 }
