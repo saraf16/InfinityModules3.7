@@ -33,13 +33,13 @@ class App extends React.Component {
           imageUrl="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-256.png"
         />
         <ProgressBar 
-          progress={97}
+          progress={10}
           striped={true}
-          animated={false}
+          animated={true}
           state="info" />
         <Row>
-          <Col size={3}></Col>
-          <Col size={3}></Col>
+          <Col size={0}></Col>
+          <Col size={13}></Col>
           <Col size={3}></Col>
         </Row>
       </div>

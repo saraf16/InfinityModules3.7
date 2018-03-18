@@ -9,7 +9,10 @@ const Col = ({size} ) => {
 }
 
 Col.propTypes = {
-    size: PropTypes.number.isRequired,
+    size: (props, propName) => {
+        if (props[propName] >= 1 && props[propName] <= 12) { return; }
+        return new Error('Number must be between 1 and 12');
+    },
 };
 
 
