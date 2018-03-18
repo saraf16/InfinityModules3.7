@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './row.css';
+import { container, outline, row } from './row.css';
 
 const Row = ({children} ) => {
     return (
-        <div>Row</div>
+        <div className={`${container} ${outline}`}>
+            <div className={`${row}`}>
+                {children}
+            </div>
+        </div>
     )
 }
 

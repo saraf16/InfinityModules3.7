@@ -1,0 +1,15 @@
+.container{
+    width: 100%; 
+    max-width: 1200px;      
+}
+
+/*-- our cleafix hack -- */ 
+.row:before, 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.outline, .outline *{
+    outline: 1px solid #F6A1A1; 
+}
