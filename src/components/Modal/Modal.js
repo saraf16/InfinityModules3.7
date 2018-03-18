@@ -15,7 +15,7 @@ const Modal = ({isOpen, onClosed, children} ) => {
         </div>
     )
     return (
-        <div isOpen={isOpen} onClick={onClosed}>{open}</div>
+        <div onClick={onClosed}>{open}</div>
     )
 }
 
