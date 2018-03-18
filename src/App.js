@@ -5,6 +5,7 @@ import NameCard from  "./components/NameCard/NameCard";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import Row from "./components/Row/Row";
 import Col from "./components/Col/Col";
+import Carousel from "./components/Carousel/Carousel";
 
 class App extends React.Component {
   constructor(props) {
@@ -37,6 +38,14 @@ class App extends React.Component {
           striped={true}
           animated={true}
           state="info" />
+           <div className={`${styles.imagesCon}`}>
+              <Carousel
+                images={[
+                  'https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-256.png',
+                  'https://t1.rbxcdn.com/12859a4e26433b868b22ab48ac1ce5b2'
+                ]}
+                size="small"/>
+             </div>
         <div className={`${styles.rowContainer}`}>
           <Row>
             <Col size={1}></Col>
@@ -66,7 +75,7 @@ class App extends React.Component {
             <Col size={1}></Col>
             <Col size={1}></Col>
           </Row>
-          <Row>
+          <Row> 
             <Col size={1}></Col>
             <Col size={1}></Col>
             <Col size={1}></Col>          

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles, {modalContent, modalTitle, modalBody, modalFooter, shown, hidden } from './modal.css';
+import styles, { modalContent, modalTitle, modalBody, modalFooter, shown, hidden } from './modal.css';
 
 const Modal = ({isOpen, onClosed, children} ) => {
     console.log(styles);

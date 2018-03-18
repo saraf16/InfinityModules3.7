@@ -1,26 +1,50 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './carousel.css';
+import styles , {next, prev } from './carousel.css';
 
+class Carousel extends React.Component {
+    constructor(props) {
+        super(props);
+        this.increaseIndex = this.increaseIndex.bind(this);
+        this.decreaseIndex = this.decreaseIndex.bind(this);
+        this.state = {
+            images: props.images, 
+            imageIndex: 0,
+            size: props.size
+        };
+    }
 
-//https://www.w3schools.com/howto/howto_js_slideshow.asp
-//byrjaði eitthvað að nota þetta 
+    increaseIndex() {
+        console.log("increase index " + (this.state.images.length - 1));
+        if(this.state.imageIndex >= (this.state.images.length - 1)) {
+            this.setState({imageIndex: 0 });
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+        }
+        else {
+            this.setState({imageIndex: (this.state.imageIndex + 1) });
+        }
+    }
 
-const Carousel = ({images, size} ) => {
-    return (
-        <div className={`${styles.carousel}`}>Carousel
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    decreaseIndex() {
+        console.log("decrease index");
+        if(this.state.imageIndex <= 0) {
+            this.setState({imageIndex: (this.state.images.length - 1) });
+        }
+        else{
+            this.setState({imageIndex: (this.state.imageIndex  - 1)});
+        }
+    }
 
+    render () {
+        return (
+            <div className={`${styles.carousel}`}>
+                <img src={this.state.images[this.state.imageIndex]} alt="" className={`${styles[`carousel-${this.size}`]}`}/>
+                <a className={prev} onClick={this.decreaseIndex}>&#10094;</a>
+                <a className={next} onClick={this.increaseIndex}>&#10095;</a>
+            </div>
+        )
+    }
 
-        </div>
-
-    )
 }
 
 Carousel.propTypes = {
