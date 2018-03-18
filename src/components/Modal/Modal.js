@@ -20,7 +20,7 @@ const Modal = ({isOpen, onClosed, children} ) => {
 }
 
 Modal.Title = ({children}) => {
-    return <div className={`${styles.modalHeader}`}>{children}</div>
+    return <div className={`${styles.modalTitle}`}>{children}</div>
 }
 
 Modal.Body = ({children}) => {
