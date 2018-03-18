@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: true
+      isOpen: false
     };
   }
 
@@ -16,6 +16,7 @@ class App extends React.Component {
     return (
       <div>
         <p>React here!</p>
+        <button onClick={() => this.setState({isOpen: !this.state.isOpen})}>Try modal</button>
         <Modal 
           isOpen={this.state.isOpen}
           onClosed={() => this.setState({isOpen: false})}>
@@ -30,10 +31,10 @@ class App extends React.Component {
           imageUrl="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-256.png"
         />
         <ProgressBar 
-          progress={50}
+          progress={80}
           striped={true}
           animated={true}
-          state="success" />
+          state="warning" />
       </div>
     );
   }

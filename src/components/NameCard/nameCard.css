@@ -1,8 +1,7 @@
 .card {
     background-color: blanchedalmond;    padding: 10px;
-    margin: 10px;
-    width: 100%;
-
+    margin: 50px;
+    width: 50%;
 }
 
 .avatar {
@@ -14,4 +13,5 @@
     transition: transform 1s ease-in;
     width: 200px;
     height: 200px;
+    border: 1px solid #888;
 }

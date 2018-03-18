@@ -3,10 +3,17 @@ import PropTypes from 'prop-types';
 import styles from './progressBar.css';
 
 const ProgressBar = ({progress, striped, animated, state} ) => {
+    // apply striped and animated styles when true
+    let classes = `${styles.progressBar} ${styles[`progressBar-${state}`]}`;
+    classes = striped ? classes += ` ${styles.striped}` : classes;
+    classes = animated ? classes += ` ${styles.animated}` : classes;
     return (
-        <div className={`${styles.progressBar} ${styles[`progressBar-${state}`]}`} >88</div>
+        <div className={`${styles.progressBackground}`}>
+            <div className={classes} style={{width: `${progress}%`}}>&nbsp;</div>
+        </div>
     )
 }
+
 
 ProgressBar.propTypes = {
     progress: PropTypes.number.isRequired,

@@ -1,3 +1,4 @@
+
 .modalHeader {
     padding: 10px 16px;
     background-color: #416d82;
@@ -15,20 +16,23 @@
 }
 
 .modalContent {
-    position: relative;
+    position: fixed;
     background-color: #fefefe;
-    margin: auto;
-    padding: 0;
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 5px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    
 
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
-.display {
-    visibility: display-block;
+
+.shown {
+    display: block;
 }

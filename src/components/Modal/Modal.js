@@ -6,18 +6,17 @@ const Modal = ({isOpen, onClosed, children} ) => {
     console.log(styles);
 
     const open = isOpen ? (
-        <div className={`${styles.modalContent} ${styles.display}`}>
+        <div className={`${styles.modalContent} ${styles.shown}`}>
             {children}
         </div>
     ): (
         <div className={`${styles.modalContent} ${styles.hidden} `}>
             {children}
         </div>
-        )
-        return (
-
-            <div isOpen={isOpen} onClick={onClosed}>{open}</div>
-        )
+    )
+    return (
+        <div isOpen={isOpen} onClick={onClosed}>{open}</div>
+    )
 }
 
 Modal.Title = ({children}) => {

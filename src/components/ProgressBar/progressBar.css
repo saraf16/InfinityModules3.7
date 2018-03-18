@@ -1,28 +1,41 @@
 .progressBar {
-    padding: 10px;
-    margin: 10px;
-    width: 100%;
-    border-bottom-width: 10px;
-    border-bottom-style: solid;
+    background-color:#fab;
 
+}
+.progressBackground {
+    background-color: silver;
+    width: 100%;
 }
 
 .progressBar-info {
     background-color: rgba(100, 100, 200, .8);
-    border-bottom-color: rgba(50, 50, 200, .8);
 }
 
 .progressBar-success {
     background-color: rgba(100, 200, 100, .8);
-    border-bottom-color: rgba(50, 200, 50, .8);
 }
 
 .progressBar-warning {
-    background-color: rgba(155, 80, 20, .8);
-    border-bottom-color: rgba(200, 80, 20, .8);
+    background-color: rgb(247, 239, 10);
 }
 
 .progressBar-danger {
-    background-color: rgba(200, 100, 100, .8);
-    border-bottom-color: rgba(200, 50, 50, .8);
+    background-color: rgba(209, 16, 16, 0.8);
+}
+
+.striped {
+    opacity: 0.8;
+    background-image: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 10px,
+      white 10px,
+      white 20px);    
+}
+.animated {
+    animation: Animation 5s linear infinite;
+}
+
+@keyframes Animation { 
+    from {background-position: 0 0;}
+    to {background-position: 700px 0px;}
 }
