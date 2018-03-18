@@ -33,7 +33,7 @@ class App extends React.Component {
         <ProgressBar 
           progress={80}
           striped={true}
-          animated={false}
+          animated={true}
           state="warning" />
       </div>
     );
