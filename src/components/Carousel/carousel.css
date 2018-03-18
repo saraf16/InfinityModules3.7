@@ -1,29 +1,25 @@
+
 .carousel {
     position: relative;
     margin: 10px;
-    max-width: 900px;
 }
 
 .carousel-small {
-    width: 200px;
-    height: 100px;
-}
-
-.carousel-medium {
     width: 300px;
     height: 200px;
 }
 
+.carousel-medium {
+    box-sizing: border-box;
+    width: 500px;
+    height: 400px;
+}
+
 .carousel-large {
-    width: 400px;
-    height: 300px;
+    width: 800px;
+    height: 700px;
 }
 
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
 .prev {
     cursor: pointer;
     position: absolute;
@@ -31,7 +27,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -39,13 +35,14 @@
 }
 
 .next {
+    box-sizing: border-box;
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;

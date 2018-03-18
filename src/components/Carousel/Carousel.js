@@ -38,9 +38,9 @@ class Carousel extends React.Component {
     render () {
         return (
             <div className={`${styles.carousel}`}>
-                <img src={this.state.images[this.state.imageIndex]} alt="" className={`${styles[`carousel-${this.size}`]}`}/>
-                <a className={prev} onClick={this.decreaseIndex}>&#10094;</a>
-                <a className={next} onClick={this.increaseIndex}>&#10095;</a>
+                <img src={this.state.images[this.state.imageIndex]} alt="" className={`${styles[`carousel-${this.state.size}`]}`}/>
+                <p className={prev} onClick={this.decreaseIndex}>&#10094;</p>
+                <p className={next} style={{paddingRight: 300}} onClick={this.increaseIndex}>&#10095;</p>
             </div>
         )
     }

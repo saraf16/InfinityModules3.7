@@ -41,7 +41,7 @@ class App extends React.Component {
            <div className={`${styles.imagesCon}`}>
               <Carousel
                 images={[
-                  'https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-256.png',
+                  'https://cdn.dribbble.com/users/1808107/screenshots/4121267/04_finn.gif',
                   'https://t1.rbxcdn.com/12859a4e26433b868b22ab48ac1ce5b2'
                 ]}
                 size="small"/>
