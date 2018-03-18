@@ -10,6 +10,6 @@
     display: table;
     clear: both;
 }
-.outline, .outline *{
-    outline: 1px solid #F6A1A1; 
+.outline *{
+    outline: 1px solid white; 
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import styles from './App.css';
 import Modal from "./components/Modal/Modal";
 import NameCard from  "./components/NameCard/NameCard";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
@@ -37,11 +37,51 @@ class App extends React.Component {
           striped={true}
           animated={false}
           state="info" />
-        <Row>
-          <Col size={3}></Col>
-          <Col size={3}></Col>
-          <Col size={3}></Col>
-        </Row>
+        <div className={`${styles.rowContainer}`}>
+          <Row>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>          
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>          
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+          </Row>
+          <Row>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>          
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>          
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+          </Row>
+          <Row>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>          
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>          
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+            <Col size={1}></Col>          
+            <Col size={1}></Col>
+            <Col size={1}></Col>
+          </Row>
+        </div>
       </div>
     );
   }

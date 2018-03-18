@@ -2,7 +2,7 @@
 .modalTitle {
     margin: 4px;
     padding: 20px 30px;
-    background-color:blanchedalmond;
+    background-color: #FFC0CB;
     border: 1px solid gray;
     font-weight: bold;
 
@@ -25,7 +25,7 @@
 
 .modalContent {
     position: fixed;
-    background-color: #fefefe;
+    background-color: rgb(245, 244, 244);
     border: 1px solid #888;
     width: 50%;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2),0 10px 20px 0 rgba(0,0,0,0.2);
