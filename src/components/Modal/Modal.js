@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './modal.css';
+import styles, {modalContent, modalTitle, modalBody, modalFooter, shown, hidden } from './modal.css';
 
 const Modal = ({isOpen, onClosed, children} ) => {
     console.log(styles);
 
     const open = isOpen ? (
-        <div className={`${styles.modalContent} ${styles.shown}`}>
+        <div className={`${modalContent} ${shown}`}>
             {children}
         </div>
     ): (
-        <div className={`${styles.modalContent} ${styles.hidden} `}>
+        <div className={`${modalContent} ${hidden} `}>
             {children}
         </div>
     )
@@ -20,15 +20,15 @@ const Modal = ({isOpen, onClosed, children} ) => {
 }
 
 Modal.Title = ({children}) => {
-    return <div className={`${styles.modalTitle}`}>{children}</div>
+    return <div className={ modalTitle }>{children}</div>
 }
 
 Modal.Body = ({children}) => {
-    return <div className={`${styles.modalBody}`}>{children}</div>
+    return <div className={ modalBody }>{children}</div>
 }
 
 Modal.Footer = ({children}) => {
-    return <div className={`${styles.modalFooter}`}>{children}</div>
+    return <div className={ modalFooter }>{children}</div>
 }
 
 Modal.propTypes = {
