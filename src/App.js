@@ -38,14 +38,12 @@ class App extends React.Component {
           striped={true}
           animated={true}
           state="info" />
-           <div className={`${styles.imagesCon}`}>
-              <Carousel
-                images={[
-                  'https://cdn.dribbble.com/users/1808107/screenshots/4121267/04_finn.gif',
-                  'https://t1.rbxcdn.com/12859a4e26433b868b22ab48ac1ce5b2'
-                ]}
-                size="small"/>
-             </div>
+          <Carousel
+            images={[
+              'https://cdn.dribbble.com/users/1808107/screenshots/4121267/04_finn.gif',
+              'https://t1.rbxcdn.com/12859a4e26433b868b22ab48ac1ce5b2'
+            ]}
+            size="small"/>
         <div className={`${styles.rowContainer}`}>
           <Row>
             <Col size={1}></Col>

@@ -37,8 +37,8 @@ class Carousel extends React.Component {
 
     render () {
         return (
-            <div className={`${styles.carousel}`}>
-                <img src={this.state.images[this.state.imageIndex]} alt="" className={`${styles[`carousel-${this.state.size}`]}`}/>
+            <div className={`${styles.carousel} ${styles[`carousel-${this.state.size}`]}`}>
+                <img src={this.state.images[this.state.imageIndex]} alt="" className={`${styles[`carousel-${this.state.size}`]}`} />
                 <p className={`${arrow} ${left}`} onClick={this.decreaseIndex}>&#10094;</p>
                 <p  className={`${arrow} ${right}` } onClick={this.increaseIndex} >&#10095;</p>
             </div>
