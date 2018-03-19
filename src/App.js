@@ -14,7 +14,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       isOpen: false,
-      tab: ''
+      tab: 1
     };
   }
 
@@ -45,7 +45,7 @@ class App extends React.Component {
               'https://cdn.dribbble.com/users/1808107/screenshots/4121267/04_finn.gif',
               'https://t1.rbxcdn.com/12859a4e26433b868b22ab48ac1ce5b2'
             ]}
-            size="small"/>
+            size="medium"/>
         <div className={`${styles.rowContainer}`}>
           <Row>
             <Col size={1}></Col>
@@ -96,9 +96,15 @@ class App extends React.Component {
             theme="dark"
             layout="horizontal"
             onSelect={newTab => this.setState({tab: newTab})}
-            currentSelectedTab={this.state}>
+            currentSelectedTab={this.state.tab}>
             <Tab selectionKey={1} title="Tab 1">
               Content 1
+            </Tab>
+            <Tab selectionKey={2} title="Tab 2">
+              Content 2
+            </Tab>
+            <Tab selectionKey={3} title="Tab 3">
+              Content 3
             </Tab>
           </Tabs>
         </div>

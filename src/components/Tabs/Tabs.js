@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './tabs.css';
+import styles, {tab, dark, light }from './tabs.css';
 
 const Tabs = ({theme, layout, onSelect, currentSelectedTab, children} ) => {
     return (
-        <div>{children}}</div> 
+        <div className={theme}>
+            {children}
+        </div>
+        
     )
 }
 

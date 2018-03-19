@@ -1,10 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './tab.css';
+import styles, {tabcontent, tab } from './tab.css';
 
-const Tab = ({selectionKey, title} ) => {
+const Tab = ({selectionKey, title, children } ) => {
     return (
-        <div>Tab</div> 
+        <div>
+            <div className={tab}>
+                <button>{title}</button>
+            </div>
+            <div id={selectionKey} className={tabcontent}>
+                <p>{children}</p>
+            </div>
+       </div>
     )
 }
 
