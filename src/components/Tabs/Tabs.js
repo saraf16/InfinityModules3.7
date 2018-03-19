@@ -9,9 +9,9 @@ const Tabs = ({theme, layout, onSelect, currentSelectedTab, children} ) => {
 }
 
 Tabs.propTypes = {
-    theme: PropTypes.oneOf['dark', 'light'],
-    layout: PropTypes.oneOf['horizontal', 'vertical'],
-    onSelect: PropType.func.isRequired,
+    theme: PropTypes.oneOf(['dark', 'light']),
+    layout: PropTypes.oneOf(['horizontal', 'vertical']),
+    onSelect: PropTypes.func.isRequired,
     currentSelectedTab: PropTypes.number
 };
 

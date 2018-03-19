@@ -6,6 +6,8 @@ import ProgressBar from "./components/ProgressBar/ProgressBar";
 import Row from "./components/Row/Row";
 import Col from "./components/Col/Col";
 import Carousel from "./components/Carousel/Carousel";
+import Tabs from "./components/Tabs/Tabs";
+import Tab from "./components/Tab/Tab"
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +21,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <p>React here!</p>
         <button onClick={() => this.setState({isOpen: !this.state.isOpen})}>Try modal</button>
         <Modal 
           isOpen={this.state.isOpen}
@@ -89,6 +90,17 @@ class App extends React.Component {
             <Col size={1}></Col>
             <Col size={1}></Col>
           </Row>
+        </div>
+        <div>
+          <Tabs
+            theme="dark"
+            layout="horizontal"
+            onSelect={newTab => this.setState({tab: newTab})}
+            currentSelectedTab={this.state}>
+            <Tab selectionKey={1} title="Tab 1">
+              Content 1
+            </Tab>
+          </Tabs>
         </div>
       </div>
     );

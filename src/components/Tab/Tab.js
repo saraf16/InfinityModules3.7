@@ -10,7 +10,7 @@ const Tab = ({selectionKey, title} ) => {
 
 Tab.propTypes = {
     selectionKey: PropTypes.number.isRequired,
-    title: PropType.string.isRequired
+    title: PropTypes.string.isRequired
 };
 
 
