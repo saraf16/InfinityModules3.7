@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './cartoonnetworkspinner.css';
 
 class CartoonNetworkSpinner extends React.Component {
@@ -48,8 +48,8 @@ class CartoonNetworkSpinner extends React.Component {
         )
     }
 }
-CartoonNetworkSpinner.PropTypes = {
-    interval: propTypes.number.isRequired
+CartoonNetworkSpinner.propTypes = {
+    interval: PropTypes.number.isRequired
 }
 CartoonNetworkSpinner.defaultProps = {
     interval: 3

@@ -5,14 +5,15 @@
     float: left;
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
     display: inline-block;
 }
 
-.tabcontent {
-    visibility: hidden;
+
+.content{
+    display: none;
     
 }
+
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -25,10 +26,6 @@
     font-size: 17px;
 }
 
-
-.isActive {
-    visibility: visible;
-}
 
 /* Change background color of buttons on hover */
 .tab button:hover {

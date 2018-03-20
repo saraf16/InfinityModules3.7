@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles, {tabcontent, tab } from './tab.css';
+import styles, {tab, content}from './tab.css';
 
 const Tab = ({selectionKey, title, display, handleClick, theme, children } ) => {
     return (
@@ -8,7 +8,7 @@ const Tab = ({selectionKey, title, display, handleClick, theme, children } ) => 
             <div className={tab}>
                 <button onClick={() => handleClick(selectionKey)}>{title}</button>
             </div>
-            <div id={selectionKey} className={`${tabcontent} ${display}`}>
+            <div id={selectionKey} className={`${content} ${display}`}>
                 <p>{children}</p>
             </div>
        </div>
