@@ -54,6 +54,9 @@
 }
 
 /* Create an active/current tablink class */
-.btn.active {
-    background-color: #ccc;
+.btn:active {
+    background-color: gray;
+}
+.btn:focus {
+    background-color: lightgray;
 }
