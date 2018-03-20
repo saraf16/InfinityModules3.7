@@ -5,3 +5,7 @@
 .light {
     background-color: blanchedalmond;
 }
+
+.display {
+    display: block !important;
+}

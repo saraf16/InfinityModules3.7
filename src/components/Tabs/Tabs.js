@@ -1,15 +1,47 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles, {tab, dark, light }from './tabs.css';
+import styles, {tab, dark, light, display }from './tabs.css';
 
-const Tabs = ({theme, layout, onSelect, currentSelectedTab, children} ) => {
-    return (
-        <div className={theme}>
-            {children}
-        </div>
-        
-    )
-}
+
+export class Tabs extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            theme: this.props.theme, 
+            layout: this.props.layout, 
+            onSelect: this.props.onSelect, 
+            currentSelectedTab: this.props.currentSelectedTab,
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(tabIndex) {
+        this.setState({
+            currentSelectedTab: tabIndex === this.state.currentSelectedTab ? this.state.activeTabIndex : tabIndex
+        });
+    }
+
+    render() {
+        const children = React.Children.map(this.props.children, child => {
+            if (child.props.selectionKey === this.state.currentSelectedTab){
+                return React.cloneElement(child, {
+                    display: display,
+                    handleClick: this.handleClick.bind(this)
+                });
+            }
+            return React.cloneElement(child, {
+                handleClick: this.handleClick.bind(this)
+            });
+        })
+        return (
+            <div >
+                {children}
+             </div>
+        )
+    }
+
+
+};
 
 Tabs.propTypes = {
     theme: PropTypes.oneOf(['dark', 'light']),
@@ -25,3 +57,5 @@ Tabs.defaultProps = {
 
 
 export default Tabs;
+
+

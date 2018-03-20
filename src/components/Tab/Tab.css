@@ -5,15 +5,14 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    display: inline;
+    display: inline-block;
 }
 
 .tabcontent {
-    /*display: none;*/
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    display: block;
+    display: none;
 }
 
 /* Style the buttons inside the tab */
@@ -28,9 +27,6 @@
     font-size: 17px;
 }
 
-.hidden {
-    display: none
-}
 
 .isActive {
     display: block;
