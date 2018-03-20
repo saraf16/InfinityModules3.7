@@ -3660,7 +3660,8 @@ var _col2 = _interopRequireDefault(_col);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Col = function Col(_ref) {
-    var size = _ref.size;
+    var size = _ref.size,
+        children = _ref.children;
 
     return _react2.default.createElement(
         'div',
@@ -3668,7 +3669,7 @@ var Col = function Col(_ref) {
         _react2.default.createElement(
             'p',
             null,
-            'content'
+            children
         )
     );
 };
