@@ -1,14 +1,6 @@
 import React from "react";
 import styles from './App.css';
-import Modal from "./components/Modal/Modal";
-import NameCard from  "./components/NameCard/NameCard";
-import ProgressBar from "./components/ProgressBar/ProgressBar";
-import Row from "./components/Row/Row";
-import Col from "./components/Col/Col";
-import Carousel from "./components/Carousel/Carousel";
-import Tabs from "./components/Tabs/Tabs";
-import Tab from "./components/Tab/Tab"
-import CartoonNetworkSpinner from "./components/CartoonNetworkSpinner/CartoonNetworkSpinner";
+import { Carousel, CartoonNetworkSpinner, Col, Modal, NameCard, ProgressBar, Row, Tab, Tabs} from './components'
 
 class App extends React.Component {
   constructor(props) {
