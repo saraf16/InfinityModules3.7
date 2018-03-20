@@ -118,7 +118,9 @@ class App extends React.Component {
               Content 3
             </Tab>
           </Tabs>
-          <CartoonNetworkSpinner interval={4}/>
+        </div>
+        <div>
+           <CartoonNetworkSpinner interval={4}/>
         </div>
       </div>
     );
