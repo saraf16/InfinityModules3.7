@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles, {tabcontent, tab } from './Tab.css';
+import styles, {tabcontent, tab } from './tab.css';
 
-const Tab = ({selectionKey, title, display, handleClick, children } ) => {
+const Tab = ({selectionKey, title, display, handleClick, theme, children } ) => {
     return (
         <div>
             <div className={tab}>

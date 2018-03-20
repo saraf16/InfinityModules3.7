@@ -2,6 +2,7 @@
 
 
 .tab {
+    float: left;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
@@ -9,16 +10,13 @@
 }
 
 .tabcontent {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    display: none;
+    visibility: hidden;
+    
 }
 
 /* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
@@ -29,7 +27,7 @@
 
 
 .isActive {
-    display: block;
+    visibility: visible;
 }
 
 /* Change background color of buttons on hover */

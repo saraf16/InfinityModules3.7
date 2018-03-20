@@ -1,9 +1,11 @@
 .dark{
     background-color: black !important;
+    position: relative;
 } 
 
 .light {
     background-color: blanchedalmond;
+    position: relative;
 }
 
 .display {

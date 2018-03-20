@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles, {tab, dark, light, display }from './tabs.css';
+import styles, { display } from './tabs.css';
 
 
 export class Tabs extends React.Component {
@@ -34,7 +34,7 @@ export class Tabs extends React.Component {
             });
         })
         return (
-            <div >
+            <div className={`${styles[`${this.state.theme}`]}`}>
                 {children}
              </div>
         )
