@@ -1,0 +1,16 @@
+
+
+.image {
+    display: inline-block;
+    margin: 10px;
+    background-size: cover;
+    background-position: 50%;
+    width: 200px;
+}
+
+@keyframes spin { 
+   
+    10%, 100%  {transform: rotate(360deg) };
+    
+
+}
