@@ -104,7 +104,7 @@ class App extends React.Component {
         </div>
         <div>
           <Tabs
-            theme="dark"
+            theme="light"
             layout="horizontal"
             onSelect={newTab => this.setState({tab: newTab})}
             currentSelectedTab={this.state.tab}>

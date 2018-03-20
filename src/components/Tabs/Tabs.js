@@ -26,11 +26,14 @@ export class Tabs extends React.Component {
             if (child.props.selectionKey === this.state.currentSelectedTab){
                 return React.cloneElement(child, {
                     display: display,
-                    handleClick: this.handleClick.bind(this)
+                    handleClick: this.handleClick.bind(this),
+                    theme: this.state.theme
                 });
             }
             return React.cloneElement(child, {
-                handleClick: this.handleClick.bind(this)
+                handleClick: this.handleClick.bind(this),
+                theme: this.state.theme
+
             });
         })
         return (

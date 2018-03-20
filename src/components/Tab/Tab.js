@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles, {tab, content}from './tab.css';
+import styles from './tab.css';
 
 const Tab = ({selectionKey, title, display, handleClick, theme, children } ) => {
     return (
         <div>
-            <div className={tab}>
-                <button onClick={() => handleClick(selectionKey)}>{title}</button>
+            <div className={`${styles[`${theme}`]}`}>
+                <button className={styles.btn} onClick={() => handleClick(selectionKey)}>{title}</button>
             </div>
-            <div id={selectionKey} className={`${content} ${display}`}>
+            <div id={selectionKey} className={`${styles[`content-${theme}`]} ${display}`}>
                 <p>{children}</p>
             </div>
        </div>
