@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "infinity-modules3.7",
   "version": "0.1.0",
   "main": "dist/index.js",
   "dependencies": {
@@ -85,5 +85,13 @@
       "jsx",
       "node"
     ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }

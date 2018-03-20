@@ -18,6 +18,7 @@ class CartoonNetworkSpinner extends React.Component {
                 'http://i.imgur.com/4EViWPk.png',
                 'http://www.indiewire.com/wp-content/uploads/2013/10/adventure-time.png']
         }
+        this.setIndex = this.setIndex.bind(this);
     }
 
     componentDidMount () {
@@ -26,8 +27,7 @@ class CartoonNetworkSpinner extends React.Component {
         }, this.state.interval*1000)
     }
 
-    setIndex = () => {
-        console.log(this.state.characters.length)
+    setIndex () {
         if(this.state.currentImageIndex >= (this.state.characters.length - 1)) {
             this.setState({currentImageIndex: 0 });
         }
