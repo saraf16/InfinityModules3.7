@@ -1,11 +1,16 @@
-.tabs{
+.tabs-horizontal{
     position: relative;
     margin-right: auto;
     padding: auto;
-    height: 500px;
-
+    height: 600px;
 } 
 
+.tabs-vertical{
+    position: relative;
+    margin-right: auto;
+    padding: auto;
+    height: 100px;
+} 
 
 .display {
     display: block !important;

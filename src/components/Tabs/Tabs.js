@@ -17,7 +17,7 @@ export class Tabs extends React.Component {
 
     handleClick(tabIndex) {
         this.setState({
-            currentSelectedTab: tabIndex === this.state.currentSelectedTab ? this.state.activeTabIndex : tabIndex
+            currentSelectedTab: tabIndex
         });
     }
 
@@ -27,12 +27,14 @@ export class Tabs extends React.Component {
                 return React.cloneElement(child, {
                     display: display,
                     handleClick: this.handleClick.bind(this),
-                    theme: this.state.theme
+                    theme: this.state.theme,
+                    layout: this.state.layout
                 });
             }
             return React.cloneElement(child, {
                 handleClick: this.handleClick.bind(this),
-                theme: this.state.theme
+                theme: this.state.theme,
+                layout: this.state.layout
 
             });
         })

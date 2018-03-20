@@ -23,8 +23,9 @@
     position: absolute;
     top: 50%;
     cursor: pointer;
-    color: black;
+    color: gray;
     margin-top: -22px;
+    font-size: 40px;
 
 }
 

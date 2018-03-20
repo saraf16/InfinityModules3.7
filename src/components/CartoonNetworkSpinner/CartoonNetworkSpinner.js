@@ -48,9 +48,7 @@ class CartoonNetworkSpinner extends React.Component {
         )
     }
 }
-CartoonNetworkSpinner.propTypes = {
-    interval: PropTypes.number.isRequired
-}
+
 CartoonNetworkSpinner.defaultProps = {
     interval: 3
 }
