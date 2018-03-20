@@ -1,9 +1,9 @@
-const path = requir('path');
+const path = require('path');
 
 module.exports = {
     entry: './src/components/index.js',
     output: {
-        path: path.reslove(__dirname, '../dist'),
+        path: path.resolve(__dirname, '../dist'),
         filename: 'index.js',
         libraryTarget: 'umd',
         library: 'ReactComponentNpm'
@@ -24,7 +24,7 @@ module.exports = {
                         options: {
                             importLoaders: 1,
                             modules: true,
-                            localIdenName: '[name]__[local]--[has:base64:5]'
+                            localIdentName: '[name]__[local]--[hash:base64:5]'
                         }
                     }
                 ]
