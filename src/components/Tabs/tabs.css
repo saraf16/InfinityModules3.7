@@ -8,4 +8,6 @@
 
 .display {
     display: block !important;
+    position: absolute;
+    left: 0px;
 }

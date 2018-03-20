@@ -1,22 +1,38 @@
 /* Style the tab content */
 
 
-.tab {
+.dark {
     float: left;
     overflow: hidden;
     border: 1px solid #ccc;
-    display: inline-block;
+    background-color: rgb(29, 27, 27);
 }
 
+.dark {
+    float: left;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgb(238, 231, 231);
+}
 
-.content{
+.content-light{
     display: none;
-    
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+    background-color: rgb(31, 29, 29);
+}
+.content-dark{
+    display: none;
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+    background-color: whitesmoke;
 }
 
 
 /* Style the buttons inside the tab */
-.tab button {
+.btn {
     background-color: inherit;
     border: none;
     outline: none;
@@ -28,11 +44,11 @@
 
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.btn:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.btn.active {
     background-color: #ccc;
 }
