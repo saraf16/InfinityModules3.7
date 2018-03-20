@@ -10,7 +10,6 @@ class CartoonNetworkSpinner extends React.Component {
             interval: this.props.interval,
             characters: ['https://vignette.wikia.nocookie.net/cartoon-network-characters/images/6/6a/Skips_character.png/revision/latest?cb=20130310180547',
                 'http://moziru.com/images/cartoon-network-clipart-4.png',
-                'http://big5kayakchallenge.com/wp-content/uploads/ktz/cool-cartoon-network-characters-wiki-image-bubbles-2016-design-the-cartoon-network-wiki-cartoon-network-characters-wiki-35bunbhbzb2sw4jz2jlpmy.png',
                 'http://images6.fanpop.com/image/photos/32600000/Vana-cartoon-networks-sidekick-32646899-160-300.png',
                 'http://i.imgur.com/Xx1ORD5.png',
                 'https://vignette.wikia.nocookie.net/parody/images/e/ed/Gumball_watterson_cartoon_network.png/revision/latest?cb=20150808071702',

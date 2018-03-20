@@ -5,6 +5,7 @@
     margin: 10px;
     background-size: cover;
     background-position: 50%;
+    width: 200px;
 }
 
 @keyframes spin { 
