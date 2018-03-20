@@ -51,10 +51,10 @@ class App extends React.Component {
             size="medium"/>
         <div className={`${styles.rowContainer}`}>
           <Row>
-            <Col size={1}></Col>
-            <Col size={1}></Col>
-            <Col size={1}></Col>          
-            <Col size={1}></Col>
+            <Col size={1}>sara</Col>
+            <Col size={1}>rut</Col>
+            <Col size={1}>er</Col>          
+            <Col size={1}>best</Col>
             <Col size={1}></Col>
             <Col size={1}></Col>
             <Col size={1}></Col>
